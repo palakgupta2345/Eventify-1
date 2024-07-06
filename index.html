@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Collector</title>
+  <script src="https://kit.fontawesome.com/a3f67db698.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="top">
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "19f87042-58f3-4690-89f9-9b19a79fba02", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "aa002bc2-2ef6-444e-825c-3fa1fc0fe3a8", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  <header class="header" data-header>
+    <div class="container">
+      <h1><a href="#" class="logo">Eventify<span class="span">.</span></a></h1>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item"><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+          <li class="nav-item"><a href="#about" class="navbar-link" data-nav-link>About Us</a></li>
+          <li class="nav-item"><a href="#food-menu" class="navbar-link" data-nav-link>Clubs</a></li>
+          <li class="nav-item"><a href="#foot" class="navbar-link" data-nav-link>Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <button class="btn btn-hover"><a href="#foot">Launch</a> </button>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-container" data-search-container>
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."class="search-input">
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+  </div>
+
+
+  <main>
+    <article>
+
+      <section class="hero" id="home" style="background-image: url(ban_back.png)">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Come Fast And Enjoy</p>
+
+            <h3 class="h3 hero-title">No More Scramble, <br> No More Rush,<br>  Get Eventized - It's a Must!</h3>
+
+            <p class="hero-text">Life's constant: unexpected events molding our journey.</p>
+
+            <button class="btn"><a href="#food-menu" class="navbar-link" data-nav-link>Buy a Ticket</a></button>
+
+          </div>
+
+        </div>
+      </section>
+
+      
+
+      <section class="section section-divider white promo">
+        <div class="container">
+
+          <ul class="promo-list has-scrollbar">
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <h3 class="h3 card-title">Kalakrit</h3>
+
+                <p class="card-text">
+                  The Cultural Club of ABES.Where culture meets passion.Explore the ultimate fun while learing ang growing.
+
+                <img src="kalakrit.png" width="400" height="400" loading="lazy" alt="Maxican Pizza"
+                  class="w-100 card-banner" style="border-radius: 50%;">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Samvad</h3>
+
+                <p class="card-text">
+                  Let's bring out the actor in you."🫶
+Theatre || Arts || Culture || Blogs || Critical Thinking
+                </p>
+
+                <img src="samvad.png" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                  class="w-100 card-banner" style="border-radius: 50%;">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Minervera</h3>
+
+                <p class="card-text">
+                  𝑳𝒆𝒕 𝒆𝒗𝒆𝒓𝒚𝒕𝒉𝒊𝒏𝒈 𝒉𝒂𝒑𝒑𝒆𝒏 𝒕𝒐 𝒚𝒐𝒖:𝒃𝒆𝒂𝒖𝒕𝒚 𝒂𝒏𝒅 𝒕𝒆𝒓𝒓𝒐𝒓.𝑱𝒖𝒔𝒕 𝒌𝒆𝒆𝒑 𝒈𝒐𝒊𝒏𝒈.𝑵𝒐 𝒇𝒆𝒆𝒍𝒊𝒏𝒈 𝒊𝒔 𝒇𝒊𝒏𝒂𝒍.
+                </p>
+
+                <img src="minervera.jpg" width="300" height="300" loading="lazy" alt="French Fry"
+                  class="w-100 card-banner" style="border-radius: 50%;">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <h3 class="h3 card-title">Picturesque</h3>
+
+                <p class="card-text">
+                  Food is any substance consumed to provide nutritional support for an organism.
+                </p>
+
+                <img src="picturesque.jpg" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                  class="w-100 card-banner" style="border-radius: 50%;">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Creative U</h3>
+
+                <p class="card-text">
+                  The Official Design Society.
+                  Where you innovate,how you innovate,and what you innovate are design problems🌻
+
+                </p>
+
+                <img src="creativeU.jpg" width="300" height="300" loading="lazy" alt="Chicken Masala"
+                  class="w-100 card-banner" style="border-radius: 50%;">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Dataverse</h3>
+
+                <p class="card-text">
+                  DataVerse is the world for data enthusiasts. Learning and building together.The official club for CSE(DS).
+                </p>
+
+                <img src="dataverse.jpg" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                  class="w-100 card-banner" style="border-radius: 50%;">
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="side_gif_be.gif" width="609" height="559" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img" ]>
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Stay Ahead of Storms
+              <span class="span">in Campus!</span>
+            </h2>
+
+            <p class="section-text">
+              An event website serves as a digital platform designed to provide information, promote, and manage various types of events. These events can range from conferences, seminars, and workshops to concerts, festivals, and social gatherings.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Event Details</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Registration and Ticketing</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">User-friendly Environment</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Live Streming and Virtual Events</span>
+              </li>
+
+            </ul>
+
+            <button class="btn"><a href="#food-menu" class="navbar-link" data-nav-link>Buy a Ticket</a></button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Events of ABES Engineering College</p>
+
+          <h2 class="h2 section-title">
+            Our Campus <span class="span">Attractions</span>
+          </h2>
+
+          <p class="section-text">
+            Bored of daily college lectures...we got you..presenting the ultimate college fun life !!
+          </p>
+
+          <ul class="fiter-list">
+
+            <li>
+              <button class="filter-btn  active">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Old</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Upcoming</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Ongoing</button>
+            </li>
+
+          </ul>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="genero.jpg" width="600" height="390" loading="lazy"
+                    alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">MAY 11-12 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">College Fest</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> GENERO'𝟐𝟑</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Relive the Magic! Our Annual College Function  here to whisk you back into the unforgettable moments and memories that made those days and nights truly spectacular.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="techfest.jpg" width="600" height="390" loading="lazy"
+                    alt="Making Chicken Strips With New Delicious Ingridents." class="w-100">
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">May 12 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Talentrove</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">TECH PRAVAAH</a>
+                  </h3>
+
+                  <p class="card-text">
+                    It witnessed many emerging talents that had us all captivated and bewitched, as if through a spell.
+The magical night, the mind-blowing performances, and the cheerful crowd proved that Degrees of Sound is indeed the mecca of music and passion! 🎸
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="manthan.jpg" width="600" height="390" loading="lazy"
+                    alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">DEC 15 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Kalakrit</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">🔥 𝐌𝐀𝐍𝐓𝐇𝐀𝐍'𝟐𝟑 🔥</a>
+                  </h3>
+
+                  <p class="card-text">
+                    where talent took centre stage, and the audience was left spellbound 🔮 From mesmerizing melodies to jaw-dropping dance moves, every moment was a gem. 💎
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="roadies.jpg" width="600" height="390" loading="lazy"
+                    alt="What Do You Think About Cheese Pizza Recipes?" class="w-100">
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jan 01 2024</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Kalakrit</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">ROADIES</a>
+                  </h3>
+
+                  <p class="card-text">
+                    𝗧𝗼 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲 𝘆𝗼𝘂𝗿 𝗰𝘂𝗹𝘁𝘂𝗿𝗮𝗹 𝘁𝗮𝗹𝗲𝗻𝘁, 𝗽𝗵𝘆𝘀𝗶𝗰𝗮𝗹 𝗮𝗻𝗱 𝗺𝗲𝗻𝘁𝗮𝗹 𝘀𝘁𝗿𝗲𝗻𝗴𝘁𝗵 𝗶𝗻 𝗲𝘃𝗲𝗿𝘆 𝘄𝗮𝘆 𝗽𝗼𝘀𝘀𝗶𝗯𝗹𝗲 , 𝘄𝗲 𝗽𝗿𝗲𝘀𝗲𝗻𝘁 𝘁𝗼 𝘆𝗼𝘂 - "𝗥𝗼𝗮𝗱𝗶𝗲𝘀" 𝘄𝗵𝗲𝗿𝗲 𝘆𝗼𝘂 𝗻𝗲𝗲𝗱 𝘁𝗼 𝘁𝗮𝗽 𝗶𝗻𝘁𝗼 𝘆𝗼𝘂𝗿 𝗵𝗲𝗮𝗿𝘁 𝘁𝗼 𝘂𝗻𝗹𝗲𝗮𝘀𝗵 𝘁𝗵𝗲 𝘄𝗮𝗿𝗿𝗶𝗼𝗿 𝘄𝗶𝘁𝗵𝗶𝗻 𝘆𝗼𝘂 𝘁𝗼 𝘀𝘂𝗿𝘃𝗶𝘃𝗲 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗴𝗮𝗺𝗲.🪨
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+                <div class="card-banner">
+                  <img src="pic_silho.jpg" width="600" height="390" loading="lazy"
+                    alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
+                </div>
+                <div class="card-content">
+                  <div class="card-meta-wrapper">
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      <time class="meta-info" datetime="2022-01-01">FEB 06 2024</time>
+                    </a>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+                      <p class="meta-info">Picturesque</p>
+                    </a>
+                  </div>
+                  <h3 class="h3"><a href="#" class="card-title">SILHOUETTE</a>
+                  </h3>
+                  <p class="card-text">
+                    Capturing moments, creating memories: 
+                    Join us at "silhouette" where photography and cinematography unite in a symphony of visuals.
+                  </p>
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="blog-card">
+                <div class="card-banner">
+                  <img src="fortify.jpg" width="600" height="390" loading="lazy"  class="w-100">
+                </div>
+                <div class="card-content">
+                  <div class="card-meta-wrapper">
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      <time class="meta-info" datetime="2022-01-01">DEC 10 2023</time>
+                    </a>
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+                      <p class="meta-info">Minerva</p>
+                    </a>
+                  </div>
+                  <h3 class="h3"><a href="#" class="card-title">Fortify 4.O</a></h3>
+                  <p class="card-text">
+                    Welcoming diverse views and logics, showcasing the best of the best. An all-inclusive and invigorating experience for the participants
+                  </p>
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+      <section class="section section-divider white cta" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="h2 section-title">
+              Unlock Your Campus Experience: Your Ultimate Guide to 
+              <span class="span">College Events!</span>
+            </h2>
+            <p class="section-text">The college actively participates in international cultural exchange programs where students get the chance to interact with peers from different countries, exchange cultural insights, and showcase their own cultural traditions through performances and exhibitions. These programs foster global understanding and promote cross-cultural friendships.</p>  
+            <button class="btn btn-hover">BUY</button>
+          </div>
+          <figure class="cta-banner">
+            <img src="right_side_gif_ae.gif" width="700" height="637" loading="lazy" alt="Burger" class="w-100 cta-img">
+          </figure>
+        </div>
+      </section>
+
+
+
+      <section class="section section-divider white testi">
+        <div class="container">
+          <p class="h3 section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">Our Connectors and <span class="span"> Speakers</span></h2>
+
+          <p class="section-text">Elevating Campus Life: Where Connections, Growth, and Memories Flourish!</p>
+
+          <ul class="testi-list has-scrollbar">
+            <li class="testi-item">
+              <div class="testi-card">
+                <div class="profile-wrapper">
+                  <figure class="avatar"><img src="luvbabbar.png" width="80" height="80" loading="lazy" alt="Robert William"></figure>
+                  <div>
+                    <h3 class="h4 testi-name">Love Babbar</h3>
+                    <p class="testi-title">Founder- Codehelp <br>Former Engineer at Amazon </p>
+                  </div>
+                </div>
+                <blockquote class="testi-text">
+                  "Aaam bhii khaas ban skte hai.
+                  Trust me 
+                  Sabki Placement lgegi."
+                </blockquote>
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+                <div class="profile-wrapper">
+                  <figure class="avatar"><img src="jassigill.png" width="80" height="80" loading="lazy" alt="Thomas Josef"></figure>
+                  <div>
+                    <h3 class="h4 testi-name">Jassie Gill</h3>
+                    <p class="testi-title">Indian singer, Live performer</p>
+                  </div>
+                </div>
+                <blockquote class="testi-text">
+                  "Where Soulful Melodies and Charismatic Vibes Meet!"
+                </blockquote>
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+                <div class="profile-wrapper">
+                  <figure class="avatar"><img src="vijay.png" width="80" height="80" loading="lazy" alt="Charles Richard"></figure>
+                  <div>
+                    <h3 class="h4 testi-name">Vijay Shankar Sharma</h3>
+                    <p class="testi-title">CEO: Paytm</p>
+                  </div>
+                </div>
+                <blockquote class="testi-text">
+                  "One million orders a day will happen here first. That's our vow. That's our game."
+                </blockquote>
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+  <div id="foot">
+  <footer class="footer">
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="" class="logo">Eventify<span class="span">.</span></a>
+          <p class="footer-text">
+            Discover, Experience, and Stay Ahead with Eventify., Your Ultimate Guide to All Upcoming Events – Where Every Moment is an Invitation to Something Extraordinary!"
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Contact Info</p></li>
+          <li><p class="footer-list-item">0120 713 5112</p></li>
+          <li><p class="footer-list-item">https://abes.ac.in/</p></li>
+          <li><address class="footer-list-item">19th KM Stone, NH-09, Ghaziabad, Uttar Pradesh 201009</address></li>
+        </ul>
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Opening Hours</p></li>
+          <li><p class="footer-list-item">Monday-Friday: 08:50-5:00</p></li>
+          <li><p class="footer-list-item">Saturday and Sunday off</p></li>
+        </ul>
+        <form action="" class="footer-form">
+          <p class="footer-list-title">Book a Seat</p>
+          <div class="input-wrapper">
+            <input type="text" name="full_name" required placeholder="Hosting Club" aria-label="Your Name"
+              class="input-field">
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+              class="input-field">
+          </div>
+          <div class="input-wrapper">
+           <p>People:
+            <input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value">
+            <p id="rangeValue">100</p>
+            </p>
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+          </div>
+          <textarea name="message" required placeholder="Describe your event" aria-label="Message" class="input-field"></textarea>
+          <button type="submit" class="btn">Lauch Event</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright-text">&copy; 2024 <a href="#" class="copyright-link">Eventify
+            </a> All Rights Reserved.
+      </p>
+    </div>
+  </div>
+
+  </footer>
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+  <script src="./assets/js/script.js" defer></script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+</body>
+</html>
